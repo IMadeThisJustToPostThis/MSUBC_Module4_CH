@@ -5,15 +5,12 @@
 var startBtn = document.querySelector("#start-btn");
 var startBtnStyle = document.getElementById("start-btn")
 
-/* quizBtns = document.getElementsByClassName("questBtn");
+quizBtns = document.getElementsByClassName("questBtn");
 for (var i = 0; i < quizBtns.length; i++) {
   quizBtns[i].addEventListener("click", function() {
     console.log(i);
   })
 }
-function quizHandler(){
-
-} */
 /*var quizBtn1 = document.querySelector("#quiz_btn1");
 var quizBtn2 = document.querySelector("#quiz_btn2");
 var quizBtn3 = document.querySelector("#quiz_btn3");
