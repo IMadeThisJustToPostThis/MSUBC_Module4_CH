@@ -33,6 +33,8 @@ function startGame() {
   isWin = false;
   timerCount = 75;
   //startBtn.disabled = true;
+  newQuestion(questionContent[0][0], questionContent[0][1], questionContent[0][2],
+    questionContent[0][3], questionContent[0][4], questionContent[0][5]);
   changeDisplay(2);
   startTimer();
   saveScores();
@@ -120,11 +122,17 @@ function endGame(isWon) {
 }
 
 // define correct answer and each question/answers
-var questionContent = [["Balls", "Wrong", "Incorrect", "Balls", "Notright", "Question 1"],
-["Cock", "Wrong", "Incorrect", "Notright", "Cock", "Question 2"],
-["end", "end", "end", "end", "end", "end"]];
-var qCI = 0; //questionContentIndex
-var qciMAX = 3;
+var questionContent = [
+["all of the above", "other arrays", "numbers and strings", "booleans", "all of the above", "Arrays in Javascript can be used to store ___."],
+["numbers", "strings", "booleans", "numbers", "alerts", "Commonly used data types DO NOT include: "],
+["curly brackets", "curly brackets", "quotes", "square brackets", "parentheses", "The condition in an if/else statement is always enclosed within ___."],
+["quotes", "quotes", "curly brackets", "commas", "parentheses", "String values must be enclosed within ____ when being assigned to variables."],
+["console.log", "print('')", "console.log", "quotes", ".display", "A very useful tool for printing content to the debugger is: "],
+["end", "end", "end", "end", "end", "end"]
+];
+//["", "", "", "", "", ""],
+var qCI = 1; //questionContentIndex
+var qciMAX = 6;
 var correctAns = "Choice 1";
 function newQuestion(answer, q1, q2, q3, q4, qText) {
   correctAns = answer;
